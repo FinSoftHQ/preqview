@@ -11,11 +11,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxthub/core": "0.8.17",
     "@pinia/nuxt": "catalog:",
     "fin-ready": "workspace:^",
     "nuxt": "catalog:",
     "pinia": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
+  },
+  "devDependencies": {
+    "wrangler": "^3.107.3"
   }
 }

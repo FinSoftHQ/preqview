@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 22
           cache: 'pnpm'
-          directory: src
+          working-directory: ./src
 
       - name: Install dependencies
         run: pnpm install

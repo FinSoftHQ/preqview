@@ -13,7 +13,7 @@ jobs:
       id-token: write
     defaults:
       run:
-        working-directory: /src
+        working-directory: src
 
     steps:
       - uses: actions/checkout@v4
@@ -31,15 +31,13 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        working-directory: /src
 
       - name: Build application
         run: pnpm build
-        working-directory: /src
 
       - name: Deploy to NuxtHub
         uses: nuxt-hub/action@v1
         id: deploy
         with:
           project-key: preqview-2f9h
-          directory: /src/dist
+          directory: src/dist

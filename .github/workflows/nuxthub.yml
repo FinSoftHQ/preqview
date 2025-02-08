@@ -23,12 +23,12 @@ jobs:
         with:
           version: 9
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'pnpm'
-          working-directory: ./src
+      # - name: Install Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 22
+      #     cache: 'pnpm'
+      #     working-directory: ./src
 
       - name: Install dependencies
         run: pnpm install

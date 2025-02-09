@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  modules: ['@nuxthub/core'],
   extends: ['fin-ready'],
   runtimeConfig: {
     // apiServer: {

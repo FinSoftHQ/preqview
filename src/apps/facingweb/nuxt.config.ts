@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  modules: ['@nuxthub/core'],
   extends: ['fin-ready'],
   runtimeConfig: {
     // apiServer: {
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/'],
+      routes: ['/', '/docs'],
       crawlLinks: false,
     },
   },

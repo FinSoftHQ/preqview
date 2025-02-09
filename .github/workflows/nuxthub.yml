@@ -43,4 +43,4 @@ jobs:
         id: deploy
         with:
           project-key: preqview-2f9h
-          directory: src/apps/facingweb/.output
+          directory: src/apps/facingweb/dist

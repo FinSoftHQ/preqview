@@ -14,4 +14,11 @@ export default defineNuxtConfig({
       ablyKey: 'NUXT_LIVE_SYNC_ABLY_KEY',
     },
   },
+
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: false,
+    },
+  },
 });
